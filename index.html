@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Searcher
+        </title>
+    </head>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+
+    <body>
+        <p>Hello from golang</p>
+        <input type="text" value="some text">
+    </body>
+    <script>
+        $("input").keyup(function() {
+            var value = $(this).val();
+            if (value !== undefined || value !== null || value !== ' ') {
+                console.log(value);
+            }
+        });
+    </script>
+</html>
